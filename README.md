@@ -5,6 +5,7 @@ Create packages quickly and easily. Currently only support rpms.
 ## Usage
 
 Package the contents of '$PWD/pkg' into an rpm called 'somepackage':
+
 ```base
 docker run --rm -it -v $PWD/pkg:/pkg swco/fpm -s dir -t rpm -n "somepackage" -v 1.0 .
 ```
