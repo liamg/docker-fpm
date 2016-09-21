@@ -9,6 +9,5 @@ RUN yum install -y sudo rpm-build ruby ruby-devel rubygems gcc && \
     yum remove -y ruby-devel gcc cpp glibc-headers kernel-headers glibc-devel && \
     yum clean all
 
-ENTRYPOINT ["/setup.sh"]
+ENTRYPOINT ["fpm"]
 
-COPY setup.sh /setup.sh
